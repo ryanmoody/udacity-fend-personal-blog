@@ -16,6 +16,18 @@ body {
   border-top: 10px solid #0066ff;
 }
 
+b {
+  font-size: 1.1em;
+}
+
+i {
+  letter-spacing: 0.1em;
+}
+
+u {
+  text-decoration-color: #0066ff;
+}
+
 .container {
   display: grid;
   grid-template-columns: 100%;

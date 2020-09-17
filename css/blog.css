@@ -13,10 +13,18 @@
 }
 
 .card-image {
-  background: url("../images/photo-1.jpg");
-  background-size: cover;
-  background-position-y: bottom;
-  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.figure {
+  text-align: right;
+}
+
+.caption {
+  color: #444;
+  font-size: 0.8em;
+  padding: 0 0.6em;
 }
 
 .card-content {
@@ -32,13 +40,19 @@
 }
 
 .card-link {
-  color: #0066ff;
+  color: #fff;
   text-decoration: none;
+  padding: 1em 3em;
+  background-color: #0066ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
 }
 
 .card-link:active,
 .card-link:hover {
-  color: #555;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 700px) {
