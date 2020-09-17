@@ -1,0 +1,166 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "post"
+    "author-info"
+    "aside";
+  gap: 2em;
+  border-top: 1px solid #efefef;
+  padding-top: 2em;
+}
+
+.post {
+  grid-area: post;
+}
+
+.post-title {
+  color: #fff;
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  background-color: #0066ff;
+  padding: 0.2em;
+}
+
+.post-date {
+  color: #444;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.post-author {
+  margin-bottom: 2em;
+}
+
+.author-name {
+  color: #0066ff;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.subheading {
+  margin: 0.6em 0;
+  font-size: 1.6em;
+}
+
+.quote {
+  margin: 1.4em 0;
+  padding: 2em;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  background-color: #efefef;
+  border-left: 5px solid #0066ff;
+}
+
+.post-body {
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.aside {
+  grid-area: aside;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aside-section {
+  margin: 0 2em 2em 0;
+}
+
+.aside-title {
+  font-size: 1.6em;
+}
+
+.aside-link {
+  color: #0066ff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0;
+}
+
+.aside-link:active,
+.aside-link:hover {
+  color: #000;
+}
+
+.about-author {
+  font-size: 1.4em;
+  margin-bottom: 0.8em;
+}
+
+.author-info {
+  grid-area: author-info;
+  padding: 1em;
+  background-color: #efefef;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1.4em;
+}
+
+.profile-pic {
+  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.author-group-name {
+  color: #000;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.author-group-title {
+  color: #444;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.bio {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding: 1em 0;
+}
+
+@media (min-width: 700px) {
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas:
+      "post aside"
+      "author-info aside";
+    gap: 2em;
+  }
+
+  .post-body {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .aside-section {
+    margin: 0 0 2em 0;
+  }
+}
